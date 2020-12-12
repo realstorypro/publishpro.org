@@ -1,7 +1,7 @@
 doctype html
 html lang="en"
   head
-    /= display_meta_tags site: @global_settings.title, description: @global_settings.description, icon: @global_settings.icon.url
+    = display_meta_tags
     meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     = stylesheet_pack_tag 'external_css', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag 'https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Karla:wght@400;600&display=swap', media: 'none', onload: "if(media!='all')media='all'"
@@ -99,26 +99,4 @@ html lang="en"
 
 
   body
-
-    = sidebar 'ui vertical inverted menu right'
-
-      = link_to "home", root_path, class: "item active"
-
-    .pusher
-      = segment "vertical hero wrapper #{@header_class if @header_class} #{'no_inversion' if @no_inversion} clearing"
-        = container
-          = grid
-            = row 'menu'
-              = column size: 16
-                = menu ui: :on, class: "secondary large #{'inverted' unless @no_inversion}"
-                  = item url: root_path, class: 'logo holder'
-                    | Publish Pro
-                    /= image_tag "#{@no_inversion? 'logo-regular.png' : 'logo-inverted.png'}", class: 'ui image small logo', alt: 'publishpro logo'
-                  = menu class: 'right', only: :desktop
-                    = link_to 'Home', root_path, class: "item active"
-                  = menu class: 'right', only: :mobile
-                    = item 'hamburger'
-                      = icon 'large sidebar'
-
-
-      =yield
+    =yield
