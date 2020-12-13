@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/jumph4x/canonical-rails.git
+  revision: ac1592ff99a85890533d4d45fab7b5af9c59c3ff
+  specs:
+    canonical-rails (0.2.10)
+      rails (>= 4.1, < 6.2)
+
 GEM
   remote: https://rubygems.org/
   remote: https://bph8G-V2WP0vMCKOboJCkRGH16woxwqFE@gem.fury.io/itsleonid/
@@ -154,6 +161,9 @@ GEM
     puma (4.3.7)
       nio4r (~> 2.0)
     rack (2.2.3)
+    rack-canonical-host (1.0.0)
+      addressable (> 0, < 3)
+      rack (>= 1.0.0, < 3)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -280,6 +290,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  canonical-rails!
   capybara (>= 2.15)
   contentful_rails
   dotenv-rails
@@ -289,6 +300,7 @@ DEPENDENCIES
   meta-tags
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
+  rack-canonical-host
   rails (~> 6.0.3, >= 6.0.3.4)
   rich_text_renderer
   rubocop

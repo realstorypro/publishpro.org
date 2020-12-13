@@ -4,11 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.2'
 
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
+gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'rack-canonical-host'
 
 # Frontend
 source 'https://bph8G-V2WP0vMCKOboJCkRGH16woxwqFE@gem.fury.io/itsleonid/' do
