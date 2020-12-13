@@ -1,11 +1,31 @@
 = fragment 'homepage'
   = wrapper
-    = fragment 'lead'
+    = fragment 'mission'
       = container
         = grid
           = row
             = column size: 2
             = column size: 12
-              = h1 class: 'inverted dividing', text: @home_page.title
+              = h1 class: 'inverted dividing', text: @home_page.mission_title
               .lead.text
-                = @renderer.render(@home_page.description).html_safe
+                = @renderer.render(@home_page.mission_description).html_safe
+
+    = fragment 'story'
+      = container
+        = grid
+          = row
+            = column size: 2
+            = column size: 12
+              = h1 class: 'inverted dividing', text: @home_page.story_title
+              .lead.text
+                = @renderer.render(@home_page.story_description).html_safe
+
+    = fragment 'contact'
+      = container
+        = grid
+          = row
+            = column size: 2
+            = column size: 12
+              = h1 class: 'inverted dividing', text: @home_page.contact_title
+              .lead.text
+                = @renderer.render(@home_page.contact_description).html_safe
