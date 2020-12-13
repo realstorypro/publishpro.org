@@ -4,8 +4,8 @@
       = container
         = grid
           = row
-            = column size: 2
-            = column size: 12
+            = column size: 2, class: 'computer only'
+            = column computer: 12, tablet: 16, mobile: 16
               = h1 class: 'inverted dividing', text: @home_page.mission_title
               .lead.text
                 = @renderer.render(@home_page.mission_description).html_safe
@@ -14,8 +14,8 @@
       = container
         = grid
           = row
-            = column size: 2
-            = column size: 12
+            = column size: 2, class: 'computer only'
+            = column computer: 12, tablet: 16, mobile: 16
               = h1 class: 'inverted dividing', text: @home_page.story_title
               .lead.text
                 = @renderer.render(@home_page.story_description).html_safe
@@ -24,8 +24,8 @@
       = container
         = grid
           = row
-            = column size: 2
-            = column size: 12
+            = column size: 2, class: 'computer only'
+            = column computer: 12, tablet: 16, mobile: 16
               = h1 class: 'inverted dividing', text: @home_page.contact_title
               .lead.text
                 = @renderer.render(@home_page.contact_description).html_safe
