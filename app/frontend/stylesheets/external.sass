@@ -1,14 +1,34 @@
 body
   background: #0d71bb
+  padding-top: 8em
 
-.page.wrapper
-  height: 100vh
+.homepage.fragment
   display: flex
 
-  .container
+  .wrapper
+    width: 100%
     align-self: center
     justify-self: center
 
-    h1.header
-      font-size: 4em
-      font-family: 'Rubik'
+  h1.header
+    font-size: 3.5em
+    font-family: 'Unica One'
+
+  .text.lead
+    font-family: 'Montserrat'
+
+    p
+      font-weight: 300
+      font-size: 1.5em
+      color: white
+
+    a
+      color: white
+      text-decoration: underline
+      transition: 0.5s all
+
+      &:hover
+        text-decoration: none
+
+  .fragment.mission, .fragment.story
+    margin-bottom: 6.5em

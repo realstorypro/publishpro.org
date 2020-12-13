@@ -173,6 +173,11 @@ defaults:
     css_class: fragment
     ui: :off
 
+  wrapper:
+    tag: div
+    css_class: wrapper
+    ui: :off
+
   component:
     tag: div
     css_class: 'component'
