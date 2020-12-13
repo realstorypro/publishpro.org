@@ -4,7 +4,7 @@ html lang="en"
     = display_meta_tags site: @global_settings.title, description: @global_settings.description, icon: @global_settings.icon.url
     meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     = stylesheet_pack_tag 'external_css', 'data-turbolinks-track': 'reload'
-    = stylesheet_link_tag 'https://fonts.googleapis.com/css2?family=Unica+One:wght@400;700&family=Montserrat:wght@300;400&display=swap', media: 'none', onload: "if(media!='all')media='all'"
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css2?family=Unica+One:wght@400;700&family=Montserrat:wght@300;400;700;900&display=swap', media: 'none', onload: "if(media!='all')media='all'"
     = javascript_pack_tag 'external_js', 'data-turbolinks-track': 'reload'
     = csrf_meta_tags
     = canonical_tag
@@ -99,4 +99,14 @@ html lang="en"
 
 
   body
+    = fragment 'menu'
+      = container
+        = grid
+          = column size: 2, class: 'computer only'
+          = column computer: 12, tablet: 16, mobile: 16
+            = h1 class: 'inverted centered horizontal divider'
+              .first
+                |Publish
+              .last Pro
+
     =yield
