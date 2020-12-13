@@ -35,27 +35,35 @@ body
 
   .wrapper
     background: #f558aa
-    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=f558aa&noise=626262&density=12&opacity=10)
+    //background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=f558aa&noise=626262&density=12&opacity=10)
     margin-bottom: 7em
-    padding-bottom: 4em
-    animation: header 4s infinite
+    padding-bottom: 8em
+    //animation: header 4s infinite
     @include media("<desktop")
       padding-bottom: 3em
 
 
   h1.header
-    margin-top: 0.5em
+    margin-top: 2.5em
     font-family: 'Montserrat'
-    font-size: 4.5em
+    font-size: 5.5em
     font-weight: 700
     text-transform: uppercase
     text-shadow: -3px 3px 1px rgba(0,0,0, 0.8)
     padding-top: 0.5em
     padding-bottom: 0.7em
-    animation: logo 4s infinite
+    //animation: logo 4s infinite
     @include media("<desktop")
       transform: scale(0.9)
       animation: logo-mobile 4s infinite
+
+    &:before
+      content: ''
+      border-left: 0
+      width: 0
+
+    &:after
+      width: 0
 
     .first
       margin-bottom: -33px
