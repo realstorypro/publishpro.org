@@ -1,3 +1,5 @@
+@import "utilities"
+
 body
 
   @keyframes header
@@ -8,6 +10,7 @@ body
     100%
       clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%)
 
+
   @keyframes logo
     0%
       transform: scale(1)
@@ -15,6 +18,14 @@ body
       transform: scale(1.15)
     0%
       transform: scale(1)
+
+  @keyframes logo-mobile
+    0%
+      transform: scale(0.9)
+    75%
+      transform: scale(0.95)
+    0%
+      transform: scale(.9)
 
 
 
@@ -28,6 +39,8 @@ body
     margin-bottom: 7em
     padding-bottom: 4em
     animation: header 4s infinite
+    @include media("<desktop")
+      padding-bottom: 3em
 
 
   h1.header
@@ -40,6 +53,9 @@ body
     padding-top: 0.5em
     padding-bottom: 0.7em
     animation: logo 4s infinite
+    @include media("<desktop")
+      transform: scale(0.9)
+      animation: logo-mobile 4s infinite
 
     .first
       margin-bottom: -33px
