@@ -6,7 +6,7 @@
           = row
             = column size: 2, class: 'computer only'
             = column computer: 12, tablet: 16, mobile: 16
-              = h1 class: 'inverted dividing horizontal divider', text: @home_page.mission_title
+              = h1 class: 'dividing horizontal divider', text: @home_page.mission_title
               .lead.text
                 = @renderer.render(@home_page.mission_description).html_safe
 
@@ -16,7 +16,7 @@
           = row
             = column size: 2, class: 'computer only'
             = column computer: 12, tablet: 16, mobile: 16
-              = h1 class: 'inverted dividing horizontal divider', text: @home_page.story_title
+              = h1 class: 'dividing horizontal divider', text: @home_page.story_title
               .lead.text
                 = @renderer.render(@home_page.story_description).html_safe
 
@@ -26,6 +26,6 @@
           = row
             = column size: 2, class: 'computer only'
             = column computer: 12, tablet: 16, mobile: 16
-              = h1 class: 'inverted dividing', text: @home_page.contact_title
+              = h1 class: 'dividing horizontal divider', text: @home_page.contact_title
               .lead.text
                 = @renderer.render(@home_page.contact_description).html_safe
