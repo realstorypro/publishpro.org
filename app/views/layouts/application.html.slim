@@ -7,7 +7,7 @@ html lang="en"
     = stylesheet_link_tag 'https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Karla:wght@400;600&display=swap', media: 'none', onload: "if(media!='all')media='all'"
     = javascript_pack_tag 'external_js', 'data-turbolinks-track': 'reload'
     = csrf_meta_tags
-    /= canonical_tag
+    = canonical_tag
 
     /= render 'partials/microdata'
 
