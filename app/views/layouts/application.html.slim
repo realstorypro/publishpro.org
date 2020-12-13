@@ -100,13 +100,14 @@ html lang="en"
 
   body
     = fragment 'menu'
-      = container
-        = grid
-          = column size: 2, class: 'computer only'
-          = column computer: 12, tablet: 16, mobile: 16
-            = h1 class: 'inverted centered horizontal divider'
-              .first
-                |Publish
-              .last Pro
+      = wrapper
+        = container
+          = grid
+            = column size: 2, class: 'computer only'
+            = column computer: 12, tablet: 16, mobile: 16
+              = h1 class: 'inverted centered horizontal divider'
+                .first
+                  |Publish
+                .last Pro
 
     =yield
