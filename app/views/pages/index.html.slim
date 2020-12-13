@@ -1,7 +1,11 @@
-.page.wrapper
-  = container
-    = grid
-      = row
-        = column size: 2
-        = column size: 12
-          = h1 class: 'center aligned inverted dividing', text: 'Coming Soon'
+= fragment 'homepage'
+  = wrapper
+    = fragment 'lead'
+      = container
+        = grid
+          = row
+            = column size: 2
+            = column size: 12
+              = h1 class: 'inverted dividing', text: @home_page.title
+              .lead.text
+                = @renderer.render(@home_page.description).html_safe
