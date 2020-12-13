@@ -1,6 +1,37 @@
 body
   background: #0d71bb
-  padding-top: 8em
+
+.menu.fragment
+  margin-bottom: 5em
+
+  h1.header
+    margin-top: 1em
+    margin-bottom: 0.8em
+    font-family: 'Montserrat'
+    font-size: 4.5em
+    font-weight: 700
+    text-transform: uppercase
+    text-shadow: -3px 3px 1px rgba(0,0,0, 0.8)
+    padding-top: 0.5em
+    padding-bottom: 0.7em
+
+    &.inverted
+      border-top-color: rgba(255, 255, 255, 0.15) !important
+      border-top-style: solid
+      border-top-width: 1px
+
+    .first
+      margin-bottom: -33px
+      transform: rotate(-0.9deg)
+
+    .last
+      padding-top: 20px
+      font-weight: 900
+      font-size: 2.11em
+      background: black
+      color: white
+      border-radius: 5px
+
 
 .homepage.fragment
   display: flex
@@ -13,6 +44,7 @@ body
   h1.header
     font-size: 3.5em
     font-family: 'Unica One'
+    margin-bottom: 0.8em
     opacity: 0.9
 
   .text.lead
@@ -21,7 +53,7 @@ body
 
     p
       font-weight: 300
-      font-size: 1.5em
+      font-size: 1.3em
       color: white
 
     a
@@ -33,8 +65,15 @@ body
       &:hover
         opacity: 1
 
-  .fragment.mission, .fragment.story
+  .fragment.mission
     margin-bottom: 6.5em
+
+    h1
+
+  .fragment.story
+    margin-bottom: 6.5em
+
+    h1
 
   .fragment.contact
     margin-bottom: 5.5em
